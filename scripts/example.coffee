@@ -10,6 +10,11 @@
 
 module.exports = (robot) ->
 
+  hello = ['hello','hey','hi']
+
+  robot.hear /says hello/, (res) ->
+    res.send "Howdy SNEAKYHEAD Team! I hear you guys are awesome at getting my sneaks."
+
   robot.hear /badger/i, (res) ->
     res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   
