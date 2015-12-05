@@ -9,5 +9,6 @@
   "hubot-redis-brain",
   "hubot-rules",
   "hubot-heroku",
-  "hubot-shipit"
+  "hubot-shipit",
+	"hubot-github-notify"
 ]
