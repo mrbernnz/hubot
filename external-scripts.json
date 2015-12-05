@@ -1,6 +1,8 @@
 [
   "hubot-help",
   "hubot-redis-brain",
-  "hubot-diagnostics",
-  "hubot-shipit"
+  "hubot-rules",
+  "hubot-heroku",
+  "hubot-shipit",
+  "hubot-github-notify"
 ]
