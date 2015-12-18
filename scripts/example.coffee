@@ -7,22 +7,29 @@
 #   Uncomment the ones you want to try and experiment with.
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
+#   
+#   Commands:
+#     sneakybot request - Make a sneaker request.
 
 module.exports = (robot) ->
 
-  hello = ['hello','hey','hi']
+  robot.respond /request (.*)/i, (res) ->
+    shoeRequest = res.match[1]
+    res.reply "We received your request for #{shoeRequest}"
 
-  robot.hear /hello/, (res) ->
-    res.send "@everyone: Howdy SNEAKYHEAD Team! My name is Sneakbot I just gotta new look thanks to @bronxzou. I'm here to change the game!"
+  # hello = ['hello','hey','hi']
 
-  robot.hear /badger/i, (res) ->
-    res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+  # robot.hear /hello/, (res) ->
+   #  res.send "@everyone: Howdy SNEAKYHEAD Team! My name is Sneakbot I just gotta new look thanks to @bronxzou. I'm here to change the game!"
+
+  # robot.hear /badger/i, (res) ->
+  #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   
   # robot.hear(/badger/i, function(res) {
   #   })
 
-  robot.hear /deploy/, (res) ->
-    res.send "I heard you the first time"
+  # robot.hear /deploy/, (res) ->
+  #   res.send "I heard you the first time"
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
