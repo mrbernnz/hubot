@@ -8,8 +8,6 @@
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 #   
-#   Commands:
-#     sneakybot request - Make a sneaker request.
 
 module.exports = (robot) ->
 
