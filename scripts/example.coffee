@@ -13,14 +13,14 @@
 
 module.exports = (robot) ->
 
-  robot.respond /request (.*)/i, (res) ->
-    shoeRequest = res.match[1]
-    res.reply "We received your request for #{shoeRequest}"
+   robot.respond /request (.*)/i, (res) ->
+     shoeRequest = res.match[1]
+     res.reply "We received your request for #{shoeRequest}"
 
   # hello = ['hello','hey','hi']
 
   # robot.hear /hello/, (res) ->
-   #  res.send "@everyone: Howdy SNEAKYHEAD Team! My name is Sneakbot I just gotta new look thanks to @bronxzou. I'm here to change the game!"
+  #  res.send "@everyone: Howdy SNEAKYHEAD Team! My name is Sneakbot I just gotta new look thanks to @bronxzou. I'm here to change the game!"
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
