@@ -2,6 +2,5 @@
   "hubot-help",
   "hubot-redis-brain",
   "hubot-diagnostics",
-  "hubot-shipit",
-  "hubot-welcome"
+  "hubot-shipit"
 ]
