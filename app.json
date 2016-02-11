@@ -3,16 +3,7 @@
   "scripts": {
   },
   "env": {
-    "HEROKU_URL": "true",
-    "HUBOT_HEROKU_API_KEY": "true",
-    "HUBOT_HEROKU_KEEPALIVE_URL": "true",
-    "HUBOT_SLACK_TOKEN": "true",
-    "REDISTOGO_URL": "true"
   },
-  "addons": [
-
-  ],
-  "buildpacks": [
-
-  ]
+  "addons": [],
+  "buildpacks": []
 }
