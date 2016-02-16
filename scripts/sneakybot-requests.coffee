@@ -20,17 +20,12 @@ module.exports = (robot) ->
 
   robot.respond /request (.*) (.*)$/i, (msg) ->
     shoeRequest = msg.match[1]
-    shoeSize = msg.match[2]
 
-    robot.brain.set 'totalShoeRequests', shoeRequest
-    msg.reply "We received your request for #{shoeRequest}"
+    #robot.brain.set 'totalShoeRequests', shoeRequest
+    msg.send "received your request for #{shoeRequest}"
   
-  robot.respond /who is @?([\w .\-]+)\?*$/i, (res) ->
-    name = res.match[1].trim()
-
-    users = robot.brain.usersForFuzzyName(name)
-    if users.length is 1
-      user = users[0]
-      # Do something interesting here..
-      
-      res.send "#{name} is user - #{user}"
+  data = JSON.stringify({ shoeRequest: shoeRequest })
+  robot.http("profile endpoint")
+  .header('Content-Type', 'application/json')
+  .post(data) (err, res, body) ->
+    # your code here
