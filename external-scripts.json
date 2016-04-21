@@ -2,5 +2,6 @@
   "hubot-help",
   "hubot-redis-brain",
   "hubot-diagnostics",
-  "hubot-shipit"
+  "hubot-shipit",
+  "hubot-tweeter"
 ]
