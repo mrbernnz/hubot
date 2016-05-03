@@ -3,5 +3,6 @@
   "hubot-redis-brain",
   "hubot-diagnostics",
   "hubot-shipit",
-  "hubot-tweeter"
+  "hubot-tweeter",
+  "hubot-instagram"
 ]
