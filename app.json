@@ -3,6 +3,30 @@
   "scripts": {
   },
   "env": {
+    "HEROKU_URL": {
+      "required": true
+    },
+    "HUBOT_HEROKU_API_KEY": {
+      "required": true
+    },
+    "HUBOT_HEROKU_KEEPALIVE_URL": {
+      "required": true
+    },
+    "HUBOT_SLACK_TOKEN": {
+      "required": true
+    },
+    "HUBOT_TWEETER_ACCOUNTS": {
+      "required": true
+    },
+    "HUBOT_TWITTER_CONSUMER_KEY": {
+      "required": true
+    },
+    "HUBOT_TWITTER_CONSUMER_SECRET": {
+      "required": true
+    },
+    "REDISTOGO_URL": {
+      "required": true
+    }
   },
   "addons": [],
   "buildpacks": []
